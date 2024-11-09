@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furkan Askin - Profile</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Base Styling */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(135deg, #1a6dd3 0%, #1c60cc 100%);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-image: linear-gradient(315deg, #4b6cb7 0%, #182848 74%);
+            color: white;
+            padding: 20px 0;
+            width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            animation: fadeIn 1s ease-out;
+        }
+
+        header .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-pic:hover {
+            transform: scale(1.1);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin: 10px 0;
+            animation: slideUp 0.8s ease-out;
+        }
+
+        p.subtitle {
+            font-size: 1.2em;
+            margin: 5px 0;
+            color: #f0f0f0;
+        }
+
+        .social-links a {
+            color: #00bfff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.2em;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #ff4b1f;
+            transform: translateY(-3px);
+        }
+
+        /* Main Content Styling */
+        main .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: 20px auto;
+            animation: fadeIn 1s ease-out;
+        }
+
+        section {
+            margin-bottom: 20px;
+            text-align: left;
+            opacity: 0;
+            animation: fadeInUp 1s ease forwards;
+            animation-delay: 0.5s;
+        }
+
+        h2 {
+            color: #4b6cb7;
+            margin-bottom: 10px;
+            text-align: center;
+            font-size: 1.8em;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #1a6dd3;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Animation Keyframes */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="container">
+        <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+        <h1>Furkan Aşkın</h1>
+        <p class="subtitle">Computer Engineering Student, Founder of YILKI Technology</p>
+        <p class="subtitle">Based in Istanbul, Turkey</p>
+        <div class="social-links">
+            <a href="mailto:furkanasknn@gmail.com">Email</a> |
+            <a href="https://www.linkedin.com/in/furkanasknn">LinkedIn</a> |
+            <a href="https://github.com/mach2furkan">GitHub</a>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="container">
+        <section class="about">
+            <h2>About Me</h2>
+            <p>I am Furkan Aşkın, a dedicated computer engineering student at İstinye University and the founder of YILKI Technology, based in Istanbul, Turkey. My professional journey is characterized by my commitment to innovation, technology, and leadership in the field of drone technology. As a former cadet of the Turkish Airforce Academy, I bring a disciplined and strategic approach to problem-solving and team management.</p>
+            <p>In addition to my studies, I have gained valuable experience through my roles in IT and aerospace engineering. I served in the IT Department at RE/MAX, where I focused on system development, data management, and IT infrastructure. I also had the unique opportunity to work with NASA in Izmir as an Aerospace Engineering Team Coordinator, overseeing technical projects and team coordination. My diverse background enables me to lead multidisciplinary teams, secure stakeholder engagement, and drive high-quality outcomes on projects.</p>
+            <p>Through YILKI Technology, I am focused on establishing a prominent presence in drone technology, both nationally and internationally. My goal is to continuously advance the company's capabilities in R&D, customer support, and market outreach. Proficient in multiple programming languages and software tools, I am always striving to further my expertise and contribute to technological advancements. I am fluent in English, with working knowledge of German and Russian, which supports my global perspective on technology and innovation.</p>
+        </section>
+        <section class="education">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>Bachelor in Computer Engineering</strong>, Istinye University</li>
+                <li><strong>Cadet</strong>, Turkish Airforce Academy</li>
+                <li><strong>Language School</strong>, University of Mount Saint Vincent</li>
+                <li><strong>Online Course in Financial Markets</strong>, Yale University</li>
+                <li><strong>Online Course in Introduction to Statistics</strong>, Stanford University</li>
+            </ul>
+        </section>
+        <section class="experience">
+            <h2>Work Experience</h2>
+            <ul>
+                <li><strong>Founder</strong>, YILKI Technology</li>
+                <li><strong>IT Department</strong>, REMAX</li>
+                <li><strong>Staff and Aerospace Engineering Team Coordinator</strong>, NASA</li>
+            </ul>
+        </section>
+        <section class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Programming: C++, C, Python, HTML, CSS, Swift</li>
+                <li>Tools: Git, GitHub, Azure, SVN, Microsoft Office</li>
+            </ul>
+        </section>
+        <section class="contact">
+            <h2>Contact Information</h2>
+            <p>Email: <a href="mailto:furkanasknn@gmail.com">furkanasknn@gmail.com</a></p>
+        </section>
+    </div>
+</main>
+</body>
+</html>
